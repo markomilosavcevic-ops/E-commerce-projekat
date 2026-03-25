@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product-card.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="brand">
+                <img src="images/Black Modern MS Logo (3).png" alt="logo">
+                <div class="hamburger-meni">
+                    <label for="menu-toggle" class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+            <div class="primary-nav">
+                <a href="index.html">Home</a>
+                <a href="product-card.html">Shop</a>
+                <a href="checkout.html">About</a>
+                <a href="#">Contact</a>
+                <a href="#"><span class="singled-text">Sale!</span></a>
+            </div>
+            <div class="actions">
+                <form class="search">
+                    <input type="search" class="box" id="search" placeholder="Search">
+                </form>
+                <a href="your-cart.html"><img class="header-img" src="images/cart_logo (1).png" alt="cart_logo"
+                 style="cursor: pointer;" onclick="prikazKorpe()"></a>
+                <img class="header-img" src="images/user_logo (1).png" alt="user_logo">
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="side">
+            <p>Home &gt; Shop &gt; View All</p>
+        </div>
+        <h1>View All Products</h1>
+        <div class="text">
+            <div class="left">
+                <div class="hamburger-meni">
+                    <label for="menu-toggle" class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+            <div class="mid">
+                <p>Showing 13-24 of 312 Products</p>
+            </div>
+            <div class="right">
+                <p>Sort by: Most Popular ></p>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="aside">
+                <p id="filter-bar">Filters</p>
+                <p>Price<span class="material-icons">chevron_right</span></p>
+                <p>Brand <span class="material-icons">keyboard_arrow_down</span></p>
+                <input type="checkbox" name="filter" value="on" id="zara" checked>
+                <label class="two-bolded" for="zara">ZARA</label> <br>
+                <input type="checkbox" name="filter" value="off" id="h&m">
+                <label for="h&m">H&M</label> <br>
+                <input type="checkbox" name="filter" value="off" id="bershka">
+                <label for="bershka">BERSHKA</label> <br>
+                <input type="checkbox" name="filter" value="off" id="koton">
+                <label for="koton">KOTON</label>
+                <p>Categories <span class="material-icons">keyboard_arrow_down</span></p>
+                <input type="checkbox" name="filter" value="off" id="fleece">
+                <label for="fleece">Fleece</label> <br>
+                <input type="checkbox" name="filter" value="off" id="sweaters">
+                <label for="sweaters">Sweaters</label> <br>
+                <input type="checkbox" name="filter" value="off" id="shitrs">
+                <label for="shitrs">Shirts</label> <br>
+                <input type="checkbox" name="filter" value="off" id="t-shitrs">
+                <label for="t-shitrs">T-Shirts</label> <br>
+                <input type="checkbox" name="filter" value="off" id="all-item" checked>
+                <label class="two-bolded" for="all-item">All items</label>
+                <p>Colection <span class="material-icons">keyboard_arrow_down</span></p>
+                <input type="checkbox" name="filter" value="off" id="summer">
+                <label for="summer">Spring/Summer</label>
+                <input type="checkbox" name="filter" value="off" id="winter">
+                <label for="winter">Autumn/Winter</label>
+                <p>Color<span class="material-icons">chevron_right</span></p>
+                <p>Other<span class="material-icons">chevron_right</span></p>
+                <button class="btn-primary">Apply Filters</button>
+            </div>
+            <div class="proizvodi">
+                <div class="cart">
+                    <div class="img">
+                        <img src="images/blazer-218w.jpg" alt="Blazer">
+                    </div>
+                    <p>Blazer</p>
+                    <p id="cena">$95</p>
+                    <button class="btn-cart" onclick="dodajNaIznos(95)">Add to Cart</button>
+                </div>
+                <div class="cart">
+                    <div class="img">
+                        <img src="images/blazer-218w.jpg" alt="Blazer">
+                    </div>
+                    <p>Elegant A-line trousers</p>
+                    <p id="cena">$72</p>
+                    <button class="btn-cart" onclick="dodajNaIznos(72)">Add to Cart</button>
+                </div>
+                <div class="cart">
+                    <div class="img">
+                        <img src="images/blazer-218w.jpg" alt="Blazer">
+                    </div>
+                    <p>Midi Coat</p>
+                    <p id="cena">$105</p>
+                    <button class="btn-cart" onclick="dodajNaIznos(105)">Add to Cart</button>
+                </div>
+                <div class="cart">
+                    <div class="img">
+                        <img src="images/blazer-218w.jpg" alt="Blazer">
+                    </div>
+                    <div class="sale">
+                        <img src="images/sale.png">
+                    </div>
+                    <div class="flex">
+                        <p>Wool Blazer</p><span class="red">-10%</span>
+                    </div>
+                    <p id="cena">$50 <span class="old-price">$55</span></p>
+                    <button class="btn-cart" onclick="dodajNaIznos(50)">Add to Cart</button>
+                </div>
+                <div class="cart">
+                    <div class="img">
+                        <img src="images/blazer-218w.jpg" alt="Blazer">
+                    </div>
+                    <div class="sale">
+                        <img src="images/sale.png">
+                    </div>
+                    <div class="flex">
+                        <p>Retro Jeans</p><span class="red">-10%</span>
+                    </div>
+                    <p id="cena">$70 <span class="old-price">$77</span></p>
+                    <button class="btn-cart" onclick="dodajNaIznos(70)">Add to Cart</button>
+                </div>
+                <div class="cart">
+                    <div class="img">
+                        <img src="images/blazer-218w.jpg" alt="Blazer">
+                    </div>
+                    <p>Belted Coat</p>
+                    <p id="cena">$95</p>
+                    <button class="btn-cart" onclick="dodajNaIznos(95)">Add to Cart</button>
+                </div>
+                <div class="cart">
+                    <div class="img">
+                        <img src="images/blazer-218w.jpg" alt="Blazer">
+                    </div>
+                    <p>Shunky Knit Sweater</p>
+                    <p id="cena">$55</p>
+                    <button class="btn-cart" onclick="dodajNaIznos(55)">Add to Cart</button>
+                </div>
+                <div class="cart">
+                    <div class="img">
+                        <img src="images/blazer-218w.jpg" alt="Blazer">
+                    </div>
+                    <p>Denim Shirt</p>
+                    <p id="cena">$34</p>
+                    <button class="btn-cart" onclick="dodajNaIznos(34)">Add to Cart</button>
+                </div>
+                <div class="cart">
+                    <div class="img">
+                        <img src="images/blazer-218w.jpg" alt="Blazer">
+                    </div>
+                    <p>Elegant Trousers</p>
+                    <p id="cena">$28</p>
+                    <button class="btn-cart" onclick="dodajNaIznos(28)">Add to Cart</button>
+                </div>
+                <div class="cart">
+                    <div class="img">
+                        <img src="images/blazer-218w.jpg" alt="Blazer">
+                    </div>
+                    <p>High-Waist Trousers</p>
+                    <p id="cena">$30</p>
+                    <button class="btn-cart" onclick="dodajNaIznos(30)">Add to Cart</button>
+                </div>
+                <div class="cart">
+                    <div class="img">
+                        <img src="images/blazer-218w.jpg" alt="Blazer">
+                    </div>
+                    <p>Mesh Sleeve Blouse</p>
+                    <p id="cena">$32</p>
+                    <button class="btn-cart" onclick="dodajNaIznos(32)">Add to Cart</button>
+                </div>
+                <div class="cart">
+                    <div class="img">
+                        <img src="images/blazer-218w.jpg" alt="Blazer">
+                    </div>
+                    <div class="sale">
+                        <img src="images/sale.png">
+                    </div>
+                    <div class="flex">
+                        <p>Knit Sweater Vest</p><span class="red">-10%</span>
+                    </div>
+                    <p id="cena">$90 <span class="old-price">$77</span></p>
+                    <button class="btn-cart" onclick="dodajNaIznos(90)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="big-btn">Back</button>
+            <button>1</button>
+            <button id="select">2</button>
+            <button>...</button>
+            <button>9</button>
+            <button>10</button>
+            <button id="big-btn">Next</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div>
+                <section>
+                    <h4>SHOP</h4>
+                    <ul>
+                        <li>Dresses</li>
+                        <li>Jackets</li>
+                        <li>Skirts</li>
+                        <li>Shoes & Bags</li>
+                        <li>Gift Cards</li>
+                        <li>Sales & Offers</li>
+                    </ul>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <h4>INFORMATION</h4>
+                    <ul>
+                        <li>About</li>
+                        <li>Terms and Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>Delivery and Return</li>
+                    </ul>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <h4>CUSTOMER SUPPORT</h4>
+                    <ul>
+                        <li>Contact</li>
+                        <li>Help</li>
+                        <li>FAQ</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="contact">
+                Designed and developed by: <span class="bold-text">ITAcademy</span>
+            </div>
+            <div class="icons">
+                <img src="images/facebook (2) 2.png" alt="facebook">
+                <img src="images/instagram (2) 2.png" alt="instagram">
+                <img src="images/tik-tok (2) 2.png" alt="tik-tok">
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

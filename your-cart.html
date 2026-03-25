@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/your-cart.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="brand">
+                <img src="images/Black Modern MS Logo (3).png" alt="logo">
+                <div class="hamburger-meni">
+                    <label for="menu-toggle" class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+            <div class="primary-nav">
+                <a href="index.html">Home</a>
+                <a href="product-card.html">Shop</a>
+                <a href="checkout.html">About</a>
+                <a href="#">Contact</a>
+                <a href="#"><span class="singled-text">Sale!</span></a>
+            </div>
+            <div class="actions">
+                <form class="search">
+                    <input type="search" class="box" id="search" placeholder="Search">
+                </form>
+                <img class="header-img" src="images/cart_logo (1).png" alt="cart_logo" 
+                style="cursor: pointer;" onclick="prikazKorpe()">
+                <img class="header-img" src="images/user_logo (1).png" alt="user_logo">
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="side">
+            <p>Home &gt; Cart</p>
+        </div>
+        <div class="checkout">
+            <h1>Your Cart</h1>
+        </div>
+        <div class="grid-div">
+            <div class="product-cart">
+                <div class="products">
+                    <div class="image-box">
+                        <div class="image">
+                            <img src="images/blazer-102w.jpg" alt="Blazer">
+                        </div>
+                        <div class="info">
+                            <p>Blazer</p>
+                            <span class="size">Size:S</span>
+                            <div class="new-element">
+                                <div class="quantity-steper">
+                                    <div>-</div>
+                                    <div>1</div>
+                                    <div>+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cena">
+                            <span>$95</span>
+                        </div>
+                    </div>
+                    <div class="image-box">
+                        <div class="image">
+                            <img src="images/blazer-102w.jpg" alt="Blazer">
+                        </div>
+                        <div class="info">
+                            <p>Chunky Knit Sweater</p>
+                            <span class="size">Size:M</span>
+                            <div class="new-element">
+                                <div class="quantity-steper">
+                                    <div>-</div>
+                                    <div>1</div>
+                                    <div>+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cena">
+                            <span>$95</span>
+                        </div>
+                    </div>
+                    <div class="image-box">
+                        <div class="image">
+                            <img src="images/blazer-102w.jpg" alt="Blazer">
+                        </div>
+                        <div class="info">
+                            <p>Mesh Sleeve Bluse</p>
+                            <span class="size">Size:S</span>
+                            <div class="new-element">
+                                <div class="quantity-steper">
+                                    <div>-</div>
+                                    <div>1</div>
+                                    <div>+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cena">
+                            <span>$95</span>
+                        </div>
+                    </div>
+                    <div class="image-box" id="margin">
+                        <div class="image">
+                            <img src="images/blazer-102w.jpg" alt="Blazer">
+                        </div>
+                        <div class="info">
+                            <p>Retro Jeans</p>
+                            <span class="size">Size:S</span>
+                            <div class="new-element">
+                                <div class="quantity-steper">
+                                    <div>-</div>
+                                    <div>1</div>
+                                    <div>+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cena">
+                            <span>$95</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ukupno">
+                <h3>Order Summary</h3>
+                <div class="flex">
+                    <p>Subtotal</p>
+                    <p class="bold-text">$252</p>
+                </div>
+                <div class="flex">
+                    <p>Discount</p>
+                    <p>0</p>
+                </div>
+                <div class="flex total">
+                    <h3>Total</h3>
+                    <h3>$252</h3>
+                </div>
+                <div class="unos-koda">
+                    <input type="text" name="promo-code" id="promo-input" placeholder="Add promo code">
+                    <label for="promo-input"></label>
+                    <button class="btn-primary" type="button" id="applyBtn">Apply</button>
+                </div>
+                <button class="btn-primary button2">Go To Checkout</button>
+                <p>Prices and costs are not displayed until you complete your purchase.</p>
+                <p>You have 30 days to change your mind. Read more about <a href="#">Delivery and Return</a>.</p>
+                <p>Need help? Please contact <a href="#">Customer Support</a>.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div>
+                <section>
+                    <h4>SHOP</h4>
+                    <ul>
+                        <li>Dresses</li>
+                        <li>Jackets</li>
+                        <li>Skirts</li>
+                        <li>Shoes & Bags</li>
+                        <li>Gift Cards</li>
+                        <li>Sales & Offers</li>
+                    </ul>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <h4>INFORMATION</h4>
+                    <ul>
+                        <li>About</li>
+                        <li>Terms and Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>Delivery and Return</li>
+                    </ul>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <h4>CUSTOMER SUPPORT</h4>
+                    <ul>
+                        <li>Contact</li>
+                        <li>Help</li>
+                        <li>FAQ</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="contact">
+                Designed and developed by: <span class="bold-text">ITAcademy</span>
+            </div>
+            <div class="icons">
+                <img src="images/facebook (2) 2.png" alt="facebook">
+                <img src="images/instagram (2) 2.png" alt="instagram">
+                <img src="images/tik-tok (2) 2.png" alt="tik-tok">
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

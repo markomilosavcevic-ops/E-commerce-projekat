@@ -1,0 +1,258 @@
+/* Header CSS */
+body {
+    font-size: 1rem;
+    margin: 0px auto;
+    max-width: 85%;
+    border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.6rem; 
+}
+
+p {
+    font-size: 1rem;
+}
+
+.header {
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 2px solid gray;
+    background: #fff1da;
+}
+
+.navbar {
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.primary-nav {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+    justify-content: space-around;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+    justify-content: space-around;
+}
+
+.hamburger-meni {
+    display: none;
+}
+
+.header img {
+    width: 40px;
+    max-width: 40px;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+}
+
+.singled-text {
+    color: red;
+}
+
+#search {
+    border: 1px solid grey;
+    box-sizing: border-box;
+    width: 190px;
+    height: 29px;
+    border-radius: 8px;
+    background: #fff1da;
+    text-align: right;
+}
+
+.header .header-img {
+    width: 30px;
+}
+
+.main-content {
+    width: 100%;
+    background-color: #fff;
+}
+
+.side {
+    color: gray;
+    font-size: small;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+/* End Of Header CSS */
+/* Footer CSS */
+.footer {
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    align-items: baseline;
+    padding-top: 50px;
+}
+
+ul li {
+    list-style: none;
+    padding-bottom: 10px;
+    color: gray;
+    font-size: small;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.contact,
+.icons {
+    margin-bottom: 20px;
+}
+
+.footer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.icons img {
+    width: 20px;
+    padding-left: 30px;
+}
+/* End Of Footer CSS */
+
+.btn-primary {
+    cursor: pointer;
+    height: 44px;
+    border-radius: var(--radius-s);
+    color: #fff;
+    background: black;
+    font-size: 1rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:767px) {
+
+    .primary-nav {
+        display: none;
+    }
+
+    .brand {
+        flex-basis: 25%;
+        justify-content: space-around;
+    }
+
+    .actions {
+        flex-basis: 75%;
+    }
+
+    body {
+        min-width: 100%;
+        border: none;
+        font-size: 1.3rem
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .hamburger-meni {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .menu-icon span {
+        background: black;
+        height: 3px;
+        width: 25px;
+        margin: 3px 0px;
+    }
+
+    .side {
+        display: none;
+    }
+
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .footer li {
+        margin: 20px 0;
+        font-size: 1.1rem;
+    }
+
+    .footer2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    body {
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    .footer {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .footer {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto auto auto;
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+    }
+}

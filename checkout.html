@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="brand">
+                <img src="images/Black Modern MS Logo (3).png" alt="logo">
+                <div class="hamburger-meni">
+                    <label for="menu-toggle" class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+            <div class="primary-nav">
+                <a href="index.html">Home</a>
+                <a href="product-card.html">Shop</a>
+                <a href="checkout.html">About</a>
+                <a href="#">Contact</a>
+                <a href="#"><span class="singled-text">Sale!</span></a>
+            </div>
+            <div class="actions">
+                <form class="search">
+                    <input type="search" class="box" id="search" placeholder="Search">
+                </form>
+                <a href="your-cart.html"><img class="header-img" src="images/cart_logo (1).png" alt="cart_logo" 
+                    style="cursor: pointer;" onclick="prikazKorpe()"></a>
+                <img class="header-img" src="images/user_logo (1).png" alt="user_logo">
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="side">
+            <p>Home &gt; Cart &gt; Checkout</p>
+        </div>
+        <div class="checkout">
+            <h1>Checkout</h1>
+        </div>
+        <div class="flex-div">
+            <div class="form-1">
+                <h3>Shipping information</h3>
+                <form class="form" action="#" method="post">
+                    <div class="first-part">
+                        <div class="first-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" name="first Name" id="first-name">
+                        </div>
+                        <div class="first-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="last name" id="last-name">
+                        </div>
+                    </div>
+
+                    <label for="address">Address</label>
+                    <input class="wider-input" type="text" name="Address" id="address">
+
+                    <label for="apartment-number">Apartment,suite,etc.</label>
+                    <input class="wider-input" type="text" name="apartment number" id="apartment-number">
+
+                    <div class="second-part">
+                        <div class="second-group">
+                            <label for="country">Country</label>
+                            <select name="country" id="country">
+                                <option value="" selected disabled hidden></option>
+                                <option value="Serbia">Serbia</option>
+                                <option value="Bosnia">Bosnia</option>
+                                <option value="Montenegro">Montenegro</option>
+                                <option value="Croatia">Croatia</option>
+                            </select>
+                        </div>
+                        <div class="second-group">
+                            <label for="city">City</label>
+                            <select name="city" id="city">
+                                <option value="" selected disabled hidden></option>
+                                <option value="Belgrade">Belgrade</option>
+                                <option value="Sarajevo">Sarajevo</option>
+                                <option value="Podgorica">Podgorica</option>
+                                <option value="Zagreb">Zagreb</option>
+                            </select>
+                        </div>
+                        <div class="second-group">
+                            <label for="zipcode">Zipcode</label>
+                            <input type="number" name="zipcode" id="zipcode" min="0" max="50000">
+                        </div>
+                    </div>
+                    <div class="save-info">
+                        <label for="save-info">
+                            <input type="checkbox" name="save info" id="save-info" value="like" checked>
+                            Save contact information
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="product-cart">
+                <h3>Review your Cart</h3>
+                <div class="products">
+                    <div class="image-box">
+                        <div class="image">
+                            <img src="images/blazer-102w.jpg" alt="Blazer">
+                        </div>
+                        <div class="info">
+                            <p>Blazer</p>
+                            <span class="size">Size:S</span>
+                            <div class="new-element">
+                                <div class="quantity-steper">
+                                    <div>-</div>
+                                    <div>1</div>
+                                    <div>+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cena">
+                            <span>$95</span>
+                        </div>
+                    </div>
+                    <div class="image-box">
+                        <div class="image">
+                            <img src="images/blazer-102w.jpg" alt="Blazer">
+                        </div>
+                        <div class="info">
+                            <p>Chunky Knit Sweater</p>
+                            <span class="size">Size:M</span>
+                            <div class="new-element">
+                                <div class="quantity-steper">
+                                    <div>-</div>
+                                    <div>1</div>
+                                    <div>+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cena">
+                            <span>$95</span>
+                        </div>
+                    </div>
+                    <div class="image-box">
+                        <div class="image">
+                            <img src="images/blazer-102w.jpg" alt="Blazer">
+                        </div>
+                        <div class="info">
+                            <p>Mesh Sleeve Bluse</p>
+                            <span class="size">Size:S</span>
+                            <div class="new-element">
+                                <div class="quantity-steper">
+                                    <div>-</div>
+                                    <div>1</div>
+                                    <div>+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cena">
+                            <span>$95</span>
+                        </div>
+                    </div>
+                    <div class="image-box" id="margin">
+                        <div class="image">
+                            <img src="images/blazer-102w.jpg" alt="Blazer">
+                        </div>
+                        <div class="info">
+                            <p>Retro Jeans</p>
+                            <span class="size">Size:S</span>
+                            <div class="new-element">
+                                <div class="quantity-steper">
+                                    <div>-</div>
+                                    <div>1</div>
+                                    <div>+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cena">
+                            <span>$95</span>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div>
+                            <p>Total</p>
+                        </div>
+                        <span>$252</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-2">
+            <h3>Payment Information</h3>
+            <form class="form" action="#" method="post">
+
+                <button class="btn-new" type="button">
+                    <a href="https://www.paypal.com/rs/home">
+                        <img src="images/PayPal 3.png">
+                    </a>
+                </button>
+                <button class="btn-new btn-primary" type="button">Cash</button>
+
+                <label for="cardholder-name">Cardholder Name</label>
+                <input class="second-form" type="text" name="cardholder name" id="cardholder-name">
+
+                <label for="card-number">Card Number</label>
+                <input class="second-form" type="text" name="card number" id="card-number">
+
+                <div class="card-duration">
+                    <div class="second-group">
+                        <label for="month">Month</label>
+                        <select name="month" id="month">
+                            <option value="" selected disabled hidden></option>
+                            <option value="Januar">Januar</option>
+                            <option value="Februar">Februar</option>
+                            <option value="Mart">Mart</option>
+                            <option value="April">April</option>
+                            <option value="Maj">Maj</option>
+                            <option value="Jun">Jun</option>
+                            <option value="Jul">Jul</option>
+                            <option value="Avgust">Avgust</option>
+                            <option value="Septembar">Septembar</option>
+                            <option value="Oktobar">Oktobar</option>
+                            <option value="Novembar">Novembar</option>
+                            <option value="Decembar">Decembar</option>
+                        </select>
+                    </div>
+
+                    <div class="second-group">
+                        <label for="year">Year</label>
+                        <select name="year" id="year">
+                            <option value="" selected disabled hidden></option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                        </select>
+                    </div>
+                    <div class="second-group">
+                        <label for="cvc">CVC</label>
+                        <input type="number" name="cvc" id="cvc" min="100" max="999">
+                    </div>
+                </div>
+
+                <button class="btn-primary btn-2" type="submit">Pay</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div>
+                <section>
+                    <h4>SHOP</h4>
+                    <ul>
+                        <li>Dresses</li>
+                        <li>Jackets</li>
+                        <li>Skirts</li>
+                        <li>Shoes & Bags</li>
+                        <li>Gift Cards</li>
+                        <li>Sales & Offers</li>
+                    </ul>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <h4>INFORMATION</h4>
+                    <ul>
+                        <li>About</li>
+                        <li>Terms and Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>Delivery and Return</li>
+                    </ul>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <h4>CUSTOMER SUPPORT</h4>
+                    <ul>
+                        <li>Contact</li>
+                        <li>Help</li>
+                        <li>FAQ</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="contact">
+                Designed and developed by: <span class="bold-text">ITAcademy</span>
+            </div>
+            <div class="icons">
+                <img src="images/facebook (2) 2.png" alt="facebook">
+                <img src="images/instagram (2) 2.png" alt="instagram">
+                <img src="images/tik-tok (2) 2.png" alt="tik-tok">
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

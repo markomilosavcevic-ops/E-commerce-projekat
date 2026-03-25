@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="brand">
+                <img src="images/Black Modern MS Logo (3).png" alt="logo">
+                <div class="hamburger-meni">
+                    <label for="menu-toggle" class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+            <div class="primary-nav">
+                <a href="index.html">Home</a>
+                <a href="product-card.html">Shop</a>
+                <a href="checkout.html">About</a>
+                <a href="#">Contact</a>
+                <a href="#"><span class="singled-text">Sale!</span></a>
+            </div>
+            <div class="actions">
+                <form class="search">
+                    <input type="search" class="box" id="search" placeholder="Search">
+                </form>
+                <a href="your-cart.html"><img class="header-img" src="images/cart_logo (1).png" alt="cart_logo" 
+                    style="cursor: pointer;" onclick="prikazKorpe()"></a>
+                <img class="header-img" src="images/user_logo (1).png" alt="user_logo">
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="side">
+            <p>Home &gt; Register</p>
+        </div>
+        <h1>Login</h1>
+        <div class="form">
+            <form class="Register-form" action="#" method="post">
+                <div class="form-items">
+
+                    <label for="email">Email</label>
+                    <input class="input" type="text" id="email" name="email">
+
+                    <label for="password">Password</label>
+                    <input class="input" type="password" id="password" name="password">
+
+                    <div class="checkbox-container flex">
+                        <label for="Remember">
+                            <input class="input-classor" type="checkbox" name="question" value="no" id="Remember">
+                            Remember me
+                        </label>
+
+                        <span class="forgot-pass"><a href="#">Forgot password?</a></span>
+                    </div>
+
+                    <button class="btn-primary" id="loginBtn">LOGIN</button>
+
+                    <p class="new-acc">Or <a href="#">Create an Account</a></p>
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div>
+                <section>
+                    <h4>SHOP</h4>
+                    <ul>
+                        <li>Dresses</li>
+                        <li>Jackets</li>
+                        <li>Skirts</li>
+                        <li>Shoes & Bags</li>
+                        <li>Gift Cards</li>
+                        <li>Sales & Offers</li>
+                    </ul>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <h4>INFORMATION</h4>
+                    <ul>
+                        <li>About</li>
+                        <li>Terms and Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>Delivery and Return</li>
+                    </ul>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <h4>CUSTOMER SUPPORT</h4>
+                    <ul>
+                        <li>Contact</li>
+                        <li>Help</li>
+                        <li>FAQ</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="contact">
+                Designed and developed by: <span class="bold-text">ITAcademy</span>
+            </div>
+            <div class="icons">
+                <img src="images/facebook (2) 2.png" alt="facebook">
+                <img src="images/instagram (2) 2.png" alt="instagram">
+                <img src="images/tik-tok (2) 2.png" alt="tik-tok">
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

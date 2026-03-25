@@ -1,0 +1,247 @@
+:root {
+    --radius-s: 5px
+}
+
+.text {
+    display: flex;
+    justify-content: space-around;
+    color: gray
+}
+
+.left {
+    flex-basis: 25%;
+    width: 30%;
+}
+
+.right {
+    flex-basis: 47%;
+    text-align: right;
+    padding-right: 3%;
+}
+
+.flex {
+    padding-right: 20px;
+}
+
+.aside {
+    margin-right: 20px;
+    margin-left: 20px;
+    flex-basis: 12%;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.aside > p {
+    font-size: 1.2em;
+}
+
+.aside input {
+    width: 20px;
+    height: 20px;
+    accent-color: black;
+    vertical-align: middle;
+}
+
+.material-icons {
+    vertical-align: middle;
+}
+
+.btn-primary {
+    width: 100%;
+    margin: 90px auto 20px;
+}
+
+.two-bolded {
+    font-weight: 600;
+    text-decoration: 1px underline;
+}
+
+#filter-bar {
+    font-size: 1.5em;
+}
+
+.proizvodi {
+    flex-basis: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid gray;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-left: 5px;
+}
+
+.cart {
+    height: 320px;
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid gray;
+    flex-basis: 23%;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.img img {
+    width: 100%;
+    max-width: 100%;
+    height: auto
+}
+
+.img {
+   width: 100%;
+   height: auto;
+   max-width: 100%;
+}
+
+.cart p {
+    margin: 5px 0 5px 0;
+}
+
+#cena {
+    position: absolute;
+    top: 70%;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.sale img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    width: 40px;
+}
+
+.btn-cart {
+    font-size: 1rem;
+    position: absolute;
+    left: 5%;
+    top: 85%;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid gray;
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cart {
+    position: relative;
+}
+
+.red {
+    color: red;
+    margin-top: 5px;
+}
+
+.buttons button {
+    background-color: #fff;
+    border: 1px solid gray;
+    border-radius: var(--radius-s);
+    width: 35px;
+    height: 30px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+#big-btn {
+    width: 12%;
+    height: 35px;
+}
+
+.buttons {
+    width: 60%;
+    margin: 30px 0 0 40%;
+}
+
+#select {
+    background-color: black;
+    color: #fff;
+}
+
+@media screen and (max-width:767px) {
+
+    .aside {
+        display: none;
+    }
+
+    .mid p {
+        font-size: 1.1rem;
+    }
+
+    .flex {
+        padding-right: 0;
+        font-size: 1.4rem;
+    }
+
+    .flex p {
+        font-size: 1.4rem;
+    }
+
+    .text {
+        padding-left: 40px;
+        padding-right: 40px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .proizvodi {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(6, 460px);
+        flex-basis: 95%;
+        margin: 0 10px 20px 25px;
+        border: 0px;
+    }
+
+    .btn-cart {
+        font-size: 1.2rem;
+    }
+
+    #cena {
+        font-size: 1.6rem;
+    }
+
+    .cart {
+       height: 440px;
+    }
+
+    .cart button {
+        height: 44px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+    .cart button {
+        height: 40px;
+    }
+
+    .buttons {
+        margin: 30px 0 0 40%;
+    }
+
+    .proizvodi {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(6, 400px);
+    }
+
+    .cart {
+        height: 380px;
+    }
+}
